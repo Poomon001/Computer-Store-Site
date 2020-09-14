@@ -1,0 +1,704 @@
+* {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url("images/bg4.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+overflow-x: hidden;
+}
+.gray1{
+  background-color:#ccc;
+  width: 100%;
+}
+
+.gray2{
+  background-color:#aaa;
+}
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+height: 120px;
+}
+/* Style the topnav links */
+.topnav a {
+float: right;
+font-family: 'Muli', sans-serif;
+display: block;
+color: rgb(180,180,180);
+text-align: center;
+padding: 10px 22px;
+margin-left: 20px;
+text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+border-bottom: 2px solid rgba(60,60,60,0.7);
+margin: auto;
+margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+.topnav a {
+float: right;
+font-size: 12px;
+font-family: 'Muli', sans-serif;
+display: block;
+color: rgb(180,180,180);
+text-align: center;
+padding: 10px 0px;
+margin-left: 10px;
+text-decoration: none;
+}
+.topnav a:hover {
+border-bottom: 2px solid rgba(60,60,60,0.7);
+margin: auto;
+margin-left: 10px;
+}
+}
+
+#head{
+position: relative;
+top: 65%;
+text-align: center;
+font-family: 'Dosis', sans-serif;
+font-size: 70px;
+color: Azure;
+}
+#flip5,
+#flip4,
+#flip3,
+#flip2,
+#flip1{
+background-color: #000;
+color: white;
+padding: 10px;
+height: 60px;
+text-align: center;
+font-family: 'Dosis', sans-serif;
+font-size: 30px;
+}
+#flip5:hover,
+#flip4:hover,
+#flip3:hover,
+#flip2:hover,
+#flip1:hover{
+background-color: rgb(30,30,30);
+color: white;
+padding: 10px;
+height: 60px;
+text-align: center;
+font-family: 'Dosis', sans-serif;
+font-size: 30px;
+text-decoration-line: underline;
+}
+.title0 {
+background-color: rgba(0,120,84,1);
+color: rgba(178,34,34,1);
+padding: 5px;
+height: 40px;
+text-align: center;
+font-family: 'Dosis', sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+.title1 {
+background-color: rgba(0,120,84,1);
+color: white;
+height: 40px;
+text-align: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: -20px;
+border-radius: 15px 50px;
+font-family: 'Dosis', sans-serif;
+font-size: 25px;
+}
+.title2 {
+background-color: rgba(178,34,34,1);
+color: white;
+height: 40px;
+text-align: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: -20px;
+border-radius: 15px 50px;
+font-family: 'Dosis', sans-serif;
+font-size: 25px;
+}
+/* style1 */
+.content{
+	height: 600px;
+}
+/* style1 */
+/* style2 */
+/* The grid container */
+.grid-container2 {
+display: grid;
+grid-template-areas:
+'left left left right right right'
+/* grid-column-gap: 10px; - if you want gap between the columns */
+}
+.grid-container2 > .left,
+.right {
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Style the left column */
+.grid-container2 > .left {
+grid-area: left;
+}
+/* Style the right column */
+.grid-container2 > .right {
+grid-area: right;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 1000px) {
+.grid-container2  {
+grid-template-areas:
+'left left left left left left'
+'right right right right right right'
+}
+}
+/* style2 */
+/* style3 */
+/* The grid container1 */
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'left left middle middle right right'
+'footer footer footer footer footer footer';
+/* grid-column-gap: 10px; - if you want gap between the columns */
+}
+.grid-container >
+.left,
+.middle,
+.right {
+padding: 10px;
+height: 300px; 
+}
+/* Style the left column */
+.grid-container >.left {
+grid-area: left;
+}
+/* Style the middle column */
+.grid-container >.middle {
+grid-area: middle;
+}
+/* Style the right column */
+.grid-container >.right {
+grid-area: right;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media(max-width: 1000px) {
+.grid-container  {
+grid-template-areas:
+'header header header header header header'
+'left left left left left left'
+'middle middle middle middle middle middle'
+'right right right right right right'
+'footer footer footer footer footer footer';
+}
+}
+/* style 3*/
+/* style 4*/
+/* The grid container1 */
+.grid-container3 {
+display: grid;
+grid-template-areas:
+'header header header header header header header header'
+'left left middle middle middle2 middle2 right right'
+'footer footer footer footer footer footer footer footer';
+/* grid-column-gap: 10px; - if you want gap between the columns */
+}
+.grid-container3 >
+.left,
+.middle,
+.middle2,
+.right {
+padding: 10px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Style the left column */
+.grid-container3 >.left {
+grid-area: left;
+background-color:#ccc;
+}
+/* Style the middle column */
+.grid-container3 >.middle {
+grid-area: middle;
+background-color:#aaa;
+}
+/* Style the middle column */
+.grid-container3 >.middle2 {
+grid-area: middle2;
+background-color:#ccc;
+}
+/* Style the right column */
+.grid-container3 >.right {
+grid-area: right;
+background-color:#bbb
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media(max-width: 1000px) {
+.grid-container3  {
+grid-template-areas:
+'header header header header header header header header'
+'left left left left left left left left'
+'middle middle middle middle middle middle middle middle'
+'middle2 middle2 middle2 middle2 middle2 middle2 middle2 middle2'
+'right right right right right right right right'
+'footer footer footer footer footer footer footer footer';
+}
+}
+/* style 4*/
+/* Style the footer */
+#logo{
+position: relative;
+float: left;
+height: auto;
+width: auto;
+}
+/*height*/
+/*red box*/
+
+#red_box2,
+#red_box1{
+	height: 400px;
+}
+#rcorners1 {
+	position: relative;
+    margin:auto;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 25px;
+    background: #555;
+    padding: 20px; 
+    width: 100%;
+    height: 80%;   
+}
+#rcorners2 {
+	position: relative;
+    margin:auto;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 25px;
+    background: #555;
+    padding: 20px; 
+    width: 100%;
+    height: 80%;    
+}
+.text_redbox_position1{
+height: 100%;
+width: 100%;
+padding-top: 10px;
+padding-left: 25%;
+padding-right: 25%;
+font-size: 16px;
+color: white;
+font-family: 'Playfair Display', serif;
+}
+@media(max-width: 1000px) {
+.text_redbox_position1 {
+    font-size: 12px;
+    }
+}
+/*red box*/
+/*package*/
+#packages1,
+#packages2,
+#packages3{
+height: 400px;
+}
+/* cool pic1 */
+.coolpic{
+position: relative;
+top:10%;
+bottom:0;
+right: 0;
+left: 0;
+background-image: url("images/icon003.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 300px;
+width: 400px;
+margin:auto;
+transition: .8s;
+}
+.coolpic:hover{
+background-image: url("images/blur3.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.coolpic1{
+position: relative;
+margin:auto;
+top: 10%;
+bottom: 0;
+right: 0;
+left: 0;
+background-image: url("images/icon001.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 300px;
+width: 400px;
+transition: .8s;
+}
+.coolpic1:hover{
+background-image: url("images/blur1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.coolpic{
+position: relative;
+top:10%;
+bottom:0;
+right: 0;
+left: 0;
+background-image: url("images/icon003.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 300px;
+width: 400px;
+margin:auto;
+transition: .8s;
+}
+.coolpic:hover{
+background-image: url("images/blur3.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.coolpic2{
+position: relative;
+background-image: url("images/icon002.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 300px;
+width: 400px;
+top: 10%;
+bottom:0;
+right: 0;
+left: 0;
+margin:auto;
+transition: .8s;
+}
+.coolpic2:hover{
+background-image: url("images/blur2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.cooltest1,
+.cooltest,
+.cooltest2{
+position: absolute;
+top: 0;
+bottom:0;
+right: 0;
+left: 0;
+margin:auto;
+height: 220px;
+width: 320px;
+background-color: rgba(0,0,0,.7);
+transition: .8s;
+}
+.coolpic1:hover > .cooltest1,
+.coolpic:hover > .cooltest,
+.coolpic2:hover > .cooltest2{
+background-color: rgba(0,0,0,.3);
+height: 250px;
+width: 350px;
+}
+/*cool pic*/
+.property{
+position: relative;
+left: 20px;
+top: 50px;
+padding-left: 100px;
+list-style: none;
+color: FloralWhite;
+font-weight: bold;
+line-height: 1.5em;
+}
+#first_page{
+background-image: radial-gradient(rgba(255,255,255,0), rgba(0,0,0,1)), url("images/bg6.jpg") ;
+background-size: cover;
+background-repeat: no-repeat;
+height: 950px;
+}
+.price{
+font-size: 2em;
+padding-top: 5px;
+padding-left: 40px;
+}
+/*package*/
+/*refurbish*/
+#refurbish1,
+#refurbish2,
+#refurbish3,
+#refurbish4,
+#refurbish5,
+#refurbish6,
+#refurbish7{
+height: 400px;
+}
+.text_box2{
+position: relative;
+top: 12%;
+margin:auto;
+text-align: center;
+height: 300px;
+width: 250px;
+background-color: SeaGreen;
+border: 3px solid white;
+box-shadow: 10px 10px 5px grey;
+}
+.property2{
+list-style: none;
+font-family: 'Playfair Display', serif;
+color: FloralWhite;
+line-height: 1.6em;
+font-size: .9em;
+padding: 0px;
+}
+.highlight{
+font-family: 'Playfair Display', serif;
+color: black;
+font-size: 1.3em;
+padding-top: 5px;
+}
+.price2{
+position: relative;
+font-size: 1.7em;
+padding-top: 10px;
+text-align: center;
+}
+.extra_text{
+position: relative;
+top: -10px;
+left: -3px;
+margin: -8px;
+font-size: .5em;
+text-align: center;
+font-family: 'Playfair Display', serif;
+color:FireBrick;
+font-weight: bold;
+}
+@media (min-width: 1700px) {
+.extra_text{
+position: relative;
+top: -15px;
+left: -3px;
+margin: -8px;
+font-size: .2em;
+text-align: center;
+font-family: 'Playfair Display', serif;
+color:FireBrick;
+font-weight: bold;
+}
+}
+/*refurbish*/
+/*service (reference for making a box inside a box)*/
+#service1,
+#service2,
+#service3,
+#service4{
+height: 400px;
+}
+.text_box{
+position: relative;
+margin:auto;
+top: 10%;
+bottom: 0;
+right: 0;
+left: 0;
+height: 300px;
+}
+.square {
+float: left;
+height: 100%;
+width: 30%;
+background-color: gray;
+text-align: center;
+}
+#icon{
+position: relative;
+margin:auto;
+top: 25%;
+bottom: 0;
+right: 0;
+left: 0;
+font-size:148px;
+width: 148px !important;
+height: 148px !important;
+}
+@media (max-width: 1000px) {
+#icon {
+position: relative;
+margin:auto;
+top: 33%;
+font-size:90px;
+}
+}
+.text_service_position{
+float: left;
+height: 100%;
+width: 70%;
+padding-top: 20px;
+padding-left: 50px;
+padding-right: 50px;
+font-size: 16px;
+font-family: 'Playfair Display', serif;
+}
+@media (max-width: 1000px) {
+.text_service_position{
+font-size: 12px;
+}
+}
+/*set white space line between 2 lines*/
+.text_service_position2{
+float: left;
+height: 100%;
+width: 70%;
+padding-top: 20px;
+padding-left: 45px;
+padding-right: 45px;
+font-size: 16px;
+font-family: 'Playfair Display', serif;
+}
+@media (max-width: 1000px) {
+.text_service_position2{
+font-size: 12px;
+padding-left: 47px;
+padding-right: 47px;
+}
+}
+/*service*/
+/*service time*/
+#timetable1,
+#timetable2{
+height: 350px;
+}
+table {
+position: relative;
+margin:auto;
+top: 10%;
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+td, th {
+border: 1px solid #ddd;
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even) {
+background-color: rgba(0,120,84,0.3);
+}
+/*servuce time*/
+.footer {
+bottom: 0;
+background-color: #ddd;
+padding: 10px;
+width: 100%;
+text-align: center;
+}
+.footer > i {
+display: inline-block;
+border-radius: 60px;
+box-shadow: 0px 0px 2px #888;
+padding: 0.4em 0.5em;
+margin-right: 5px;
+}
+#icon4,
+#icon3,
+#icon2,
+#icon1{
+    font-size: 28px;
+}
+/* contact/about/support us*/
+.vertical-center {
+    margin-top: 40px;
+    position: relative;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.about_textbox{
+	margin: auto;
+	width: 100%;
+	height: 60%;
+	border: 1px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+}
+.about_textbox2{
+	margin: auto;
+	width: 100%;
+	height: 60%;
+	border: 1px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+}
+.about_text{
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 20%;
+padding-right: 20%;
+font-size: 16px;
+font-family: 'Playfair Display', serif;
+color: white;
+}
+@media (max-width: 1000px) {
+.about_text{
+font-size: 10px;
+padding-left: 30%;
+padding-right: 30%;
+}
+}
+.about_text>a {
+    margin-bottom: 10px;
+}
+
+.about_text>a {
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+}
+
+.about_text>a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s;
+}
+
+.about_text>a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}

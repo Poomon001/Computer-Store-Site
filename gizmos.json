@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "compile": [
+      "chmod -R 777 icon",
+      "chmod -R 777 images",
+      "chmod -R 644 gizmos.php",
+      "chmod -R 644 gizmos.html",
+      "chmod -R 644 gizmos.js",
+      "chmod -R 644 gizmos.csc"
+    ]
+  }
+}

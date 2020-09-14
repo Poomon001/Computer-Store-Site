@@ -1,0 +1,26 @@
+/*toggle*/
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $('#toggle1').slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $('#toggle2').slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip3").click(function(){
+        $('#toggle3').slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip4").click(function(){
+        $('#toggle4').slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#flip5").click(function(){
+        $('#toggle5').slideToggle("slow");
+    });
+});
